@@ -1,0 +1,32 @@
+
+
+/*  
+    MOVE WHEN WINDOW POSITION MEET
+*/
+
+[data-move] {
+    transition: 500ms ease;
+    opacity: 0;
+}
+
+[data-move="right"] {
+    transform: translateX(-200px);
+}
+[data-move="left"] {
+    transform: translateX(200px);
+}
+
+[data-move="up"] {
+    transform: translateY(50px);
+}
+
+
+[data-move="welcome-text"] {
+    transform: translateX(-200px);
+}
+
+.animation {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+}
+
