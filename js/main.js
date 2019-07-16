@@ -48,6 +48,7 @@ const init = () => {
 }
 
 
+// POSSIVEL DELETE - ANIMACAO DO TEXTO DE BEM-VINDO VAI TER QUE SER REFEITO
 const welcomeTextAnim = () => {
     const dataMoveElements = document.querySelectorAll('[data-move="welcome-text"]');
     let element = 0;
@@ -86,6 +87,7 @@ const showElement = (pos) => {
 
 
 // FAQ QUESTIONS ANIMATION
+// aqui verifica se o botão que foi apertado é o mesmo da faqlist
 const faqClick = () => {
     const faqList = document.querySelectorAll('[data-switch]');
     const faqBtnQuestion = document.querySelectorAll('.q-title-container');
@@ -116,6 +118,7 @@ const faqClick = () => {
 
 
 // Verify window width to adjust how FAQ list open
+// aqui estou pegando o ul de cada lista das respostas e colocando dentro do .show
 function windowSize(f, faqList, show) {
     
     const body = document.querySelector('body');
