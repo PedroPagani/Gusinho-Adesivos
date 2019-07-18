@@ -11,16 +11,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
-    <!-- Place favicon.ico in the root directory -->
-    <!-- build:css styles/main.css -->
+
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/animation.css">
     
-    <!-- endbuild -->
-    
-    <!-- build:js scripts/vendor/modernizr.js -->
-    
-    <!-- endbuild -->
+
     
     
   </head>
@@ -29,7 +24,12 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <div class="black-bg"></div>
+
+    
+
     <main class="wrap">
+       
 
       <section class="loading-screen-container" data-loading="open">
         <div class="loading-content">
@@ -38,8 +38,32 @@
             <img src="img/loader.png" alt="">
           </div>
         </div>
-
       </section>
+      
+    
+
+
+      <section id="photo-modal" data-isopen="close">
+        <div class="size-modal">
+
+          <div class="photo-modal-container">
+            <img src="" alt="">
+            <div class="close-button">
+              <i class="fas fa-window-close"></i>
+            </div>
+          </div>
+          <div class="description-container">
+            <p class="description"></p>
+          </div>
+        </div>
+      </section>
+
+
+      <div class="whatsapp-icon-float">
+        <a href="https://wa.me/+5519991662578">
+          <img src="img/WhatsApp-icon.png" alt="whatsapp Icone">
+        </a>
+      </div>
 
 
     
@@ -54,8 +78,12 @@
             <h1>Colorindo seu cenário urbano</h1>
           </div>
           <div class="video-container">
-            <video src="img/video/video-site-gusinho.mp4" autoplay muted loop playsinline controls></video>
+            <video src="img/video/video-site-gusinho.mp4" autoplay muted loop playsinline></video>
           </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-chevron-down"></i>
         </div>
 
       </section>
@@ -102,60 +130,29 @@
             </div>
         </div>
       </section>
+      
+      
 
-      <section id="btn-grid-section">  
+      <section id="test" class="btn-grid-section">  
         <div class="links-container">
             <ul class="links-list">
-                <li role="button">Teto</li>
+                <li role="button" class="selected">Teto</li>
                 <li role="button">Personalizados</li>
-                <li role="button">Empresas</li>
-                <li role="button">Frotas</li>
-                <li role="button">Motos Track Day</li>
-                <li role="button">Drift</li>
-                <li role="button">Películas</li>
+                <li role="button"> Empresas </li>
             </ul>
+            
         </div>
       </section>
 
 
-      <!-- MODELO -->
+
+      
       <section id="photos-grid">
 
         <div class="grid-container">
-          <div class="grid-img-container">
-            <img src="" alt="">
-          </div>
-          <div class="grid-img-container">
-            <img src="" alt="">
-          </div>
-          <div class="grid-img-container">
-            <img src="" alt="">
-          </div>
-          <div class="grid-img-container">
-            <img src="" alt="">
-          </div>
-          <div class="grid-img-container">
-            <img src="" alt="">
-          </div>
-          <div class="grid-img-container">
-            <img src="" alt="">
-          </div>
-          <div class="grid-img-container">
-            <img src="" alt="">
-          </div>
-          <div class="grid-img-container">
-            <img src="" alt="">
-          </div>
-          <div class="grid-img-container">
-            <img src="" alt="">
-          </div>
-          <div class="grid-img-container">
-            <img src="" alt="">
-          </div>
+        
 
         </div>
-
-
 
       </section>
 
@@ -319,13 +316,13 @@
     
     
     
-    <!-- build:js scripts/main.js -->
+    
     <script
     src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
     crossorigin="anonymous"></script>
+    <script src="js/gallery-control.js"></script>
     <script src="js/main.js"></script>
-    <!-- endbuild -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   </body>
 </html>

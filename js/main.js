@@ -2,22 +2,26 @@
 
 
 
-
+const gallery = new GalleryControl();
 
 
 const init = () => {
     const body = document.querySelector('body');
     const loadingPage = document.querySelector('[data-loading]');
 
+  
+
     body.style.overflow = 'hidden';
 
 
     window.onload = () => {
+
         loadingPage.dataset.loading = 'close';
         body.style.overflow = 'auto';
-        welcomeTextAnim();
-        
 
+        
+        
+        
 
         let bodyClass = body.getAttribute('class');
         
@@ -25,10 +29,6 @@ const init = () => {
             case 'index':
                 sliderInit();
                 faqClick();
-            break;
-
-            case 'services':
-                getElementsOffSet();
             break;
 
             case 'about':
@@ -39,8 +39,8 @@ const init = () => {
         
         window.onscroll = () => {
             windowPosAnim();
+            //fixedCategorieHeader();
 
-            
             
         }
     }
@@ -48,25 +48,11 @@ const init = () => {
 }
 
 
-// POSSIVEL DELETE - ANIMACAO DO TEXTO DE BEM-VINDO VAI TER QUE SER REFEITO
-const welcomeTextAnim = () => {
-    const dataMoveElements = document.querySelectorAll('[data-move="welcome-text"]');
-    let element = 0;
 
 
-    const interval = setInterval(() => {
-        dataMoveElements[element].classList.add('animation');
-        element++;
-        if(element === dataMoveElements.length) {
-            
-            clearInterval(interval);
-        }
-
-    },100)
-}
 
 const windowPosAnim = () => {
-    const currentPosition = window.pageYOffset + window.innerHeight * 0.75;
+    let currentPosition = window.pageYOffset + window.innerHeight * 0.75;
     showElement(currentPosition);
     
 }
@@ -84,6 +70,37 @@ const showElement = (pos) => {
 
 }
 
+// REPENSAR!!!
+/* const fixedCategorieHeader = () => {
+
+    const elCategorieHeader = document.getElementById('test');
+    
+        const headerOffset = elCategorieHeader.offsetTop;
+        
+        console.log(headerOffset);
+
+
+    let winPosition = window.pageYOffset;
+
+    console.log(headerOffset);
+    
+
+    if (headerOffset < winPosition) {
+        elCategorieHeader.classList.add('fixed');
+        
+    } else {
+        elCategorieHeader.classList.remove('fixed');
+    }
+
+
+
+ 
+    
+    
+
+
+}
+*/
 
 
 // FAQ QUESTIONS ANIMATION
@@ -173,30 +190,6 @@ const sliderInit = () => {
                       
 }
 
-
-/* 
-    SERVICES PAGE
- */
-
- const getElementsOffSet = () => {
-    const elementsToGo = document.getElementsByClassName('s1');
-    const listBtn = document.querySelectorAll('.links-list li');
-    const offSetList = []
-    
-     for(let i = 0; i < listBtn.length; i++) {
-        offSetList.push(elementsToGo[i].offsetTop);
-         listBtn[i].addEventListener('click',() => {
-            windowMoveTo(i, offSetList);
-            
-            });
-     }
-
-     
-
-    
-
-     
- }
 
 
  const windowMoveTo = (i, offSetList) => {

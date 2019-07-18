@@ -27,7 +27,7 @@ gulp.task('serve', (done) => {
 
 gulp.task('sass', (done) => {
     gulp.src('./scss/*.scss')
-    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(sass({outputStyle: ''}).on('error', sass.logError))
     .pipe(autoprefixer({
         browsers: ['last 2 versions']
     }))

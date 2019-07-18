@@ -5,8 +5,10 @@
 
 $font: 'Ubuntu', sans-serif;
 $font-menu: 'Staatliches', cursive;
-$color-dark-blue: "#0e0d42";
-$color-light-blue: "#42f4eb";
+$color-dark-blue: #0e0d42;
+$color-light-blue: #42f4eb;
+$color-shadow-blue: #748CAB;
+$color-eggshell: #F0EBD8;
 
 body {
   margin: 0;
@@ -71,13 +73,30 @@ img {
 }
 
 /* 
+  WHATSAPP ICON
+*/
+
+.whatsapp-icon-float {
+  position: fixed;
+  width: 20%;
+  right: 10px;
+  bottom: 10px;
+  z-index: 900;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* 
   LOADING SCREEN
  */
 
 .loading-screen-container {
   position: fixed;
   width: 100%;
-  z-index: 7;
+  z-index: 999;
   top: 0;
   height: calc(100vh - 56px);
   background: #42f4eb;
@@ -119,6 +138,65 @@ img {
 
 
 
+/* 
+
+  PHOTO MODAL
+*/
+
+.black-bg {
+  display: none;
+  position: fixed;
+  background: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 100vh;
+  z-index: 800;
+}
+
+.size-modal {
+  width: 100%;
+  height: 80vh;
+  overflow: auto;
+}
+
+#photo-modal {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background: $color-dark-blue;
+  
+  .photo-modal-container {
+    padding-top: 30px;
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    
+
+    img {
+      //padding-top: 50px;
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+    .close-button {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      font-size: 32px;
+      color: $color-shadow-blue;
+      
+    }
+
+
+  }
+
+}
+
+.description-container {
+  padding: 20px;
+  line-height: 1.5em;
+  text-align: center;
+}
 
 
 
@@ -130,13 +208,13 @@ img {
 
 #home-section {
   width: 100%;
-  //height: calc(100vh - 56px);
-  height: 100vh;
+  padding-top: 50px;
+  height: calc(100vh - 56px);
 }
 
 .logo-container {
   padding: 0 20px;
-  width: 100%;
+  max-width: 600px;
   img {
     width: 100%;
   }
@@ -155,6 +233,40 @@ video {
   width: 100%;
 }
 
+.box {
+  font-size: 2em;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%); 
+  animation: bounce 3s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform:  translate(-50%,0px)  ;
+  }
+  15% {
+    transform:  translate(-50%,-25px)  ;
+  }
+  30% {
+    transform:  translate(-50%,0px)  ;
+  }
+  45% {
+    transform:  translate(-50%,-15px)  ;
+  }
+  60% {
+    transform:  translate(-50%,0px)  ;
+  }
+  75% {
+    transform:  translate(-50%,-5px)  ;
+  }
+  100% {
+    transform:  translate(-50%,0px)  ;
+  }
+}
+
+
 /* 
 
   WELCOME -TEXT
@@ -163,7 +275,8 @@ video {
 
 #welcome-text {
   text-align: center;
-  padding: 0 20px;
+  line-height: 2em;
+  padding: 20px 20px;
 }
 
 
@@ -172,9 +285,9 @@ video {
   Photo gallery
 */
 
-
-
-
+.photo-galery-section {
+  padding-bottom: 50px;
+}
 
 .slick-prev {
   left: 20px;
@@ -208,29 +321,55 @@ video {
 
 /* 
 
-  PHOTOS SERVICES SECTION
+  PHOTOS CATEGORIES SECTION
 */
 
-#btn-grid-section {
-  margin-top: 30px;
+.btn-grid-section {
+
+  background: $color-shadow-blue;
+  padding: 20px 0;
+
   .links-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 
     li {
-      padding: 10px;
+      margin: 0 10px;
+      font-size: 19px;
+      cursor: pointer;
     }
   }
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  
+}
+
+.selected {
+  color: $color-light-blue;
+  text-shadow: 1px 1px 5px $color-dark-blue;
+  padding-bottom: 5px;
+  
 }
 
 /* 
   GRID SECTION
 */
 
+#photos-grid {
+  background: $color-shadow-blue;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 .grid-container {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   .grid-img-container {
     padding: 5px;
     width: 50%;
@@ -485,13 +624,40 @@ footer {
 
 
 @media only screen and (min-width: 640px) {
-/* 
-  JOBS SECTION - 640PX
- */
 
-.job {
-  width: 100%;
-}
+  #home-section {
+    padding: 0;
+  }
+
+  .logo-container {
+    //display: none;
+    position: absolute;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+
+  .slogan-container {
+    //display: none;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .video-container {
+    margin: 0;
+    height: 100vh;
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+ 
 
 }
 
@@ -499,13 +665,25 @@ footer {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 @media only screen and (min-width: 1024px) {
 
+.whatsapp-icon-float {
+  display: none;
+}
+
+.box {
+  display: none;
+}
 
 
 .loading-screen-container {
   height: 100vh;
   
 }
+.grid-container {
+  .grid-img-container{
+    height: 300px;
+  }
 
+}
 
 
 
@@ -517,7 +695,7 @@ footer {
  */
 
 
- .home-section {
+ #home-section {
   height: 100vh
 }
 
@@ -540,35 +718,6 @@ footer {
 }
 
 
-/* 
-  JOBS SECTION - 1024PX
- */
-
- .job-list-container {
-  width: 100%;
-}
-
-.job {
-  width: 100%;  
-  height: 50vh;
-}
-
-.job-content {
-  padding: 0;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.job-content {
-  h1 {
-    font-size: 40px;
-    padding-bottom: 30px;
-  }
-  p {
-    font-size: 25px;
-  }
-}
 
 
 

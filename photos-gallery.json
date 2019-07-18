@@ -1,0 +1,202 @@
+{
+    "photos": {
+        "categories": [
+            {
+                "id": "teto",
+                "photoInfo": [
+                    {
+                        "photoId": "1",
+                        "smallThumb": "",
+                        "largeThumb": "img/fotos-teste/foto-teste (1).jpeg",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "photoId": "2",
+                        "smallThumb": "",
+                        "largeThumb": "img/fotos-teste/foto-teste (2).jpeg",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "photoId": "3",
+                        "smallThumb": "",
+                        "largeThumb": "img/fotos-teste/foto-teste (3).jpeg",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "photoId": "4",
+                        "smallThumb": "",
+                        "largeThumb": "img/fotos-teste/foto-teste (4).jpeg",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "photoId": "5",
+                        "smallThumb": "",
+                        "largeThumb": "img/fotos-teste/foto-teste (5).jpeg",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "photoId": "6",
+                        "smallThumb": "",
+                        "largeThumb": "img/fotos-teste/foto-teste (6).jpeg",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "photoId": "7",
+                        "smallThumb": "",
+                        "largeThumb": "img/fotos-teste/foto-teste (7).jpeg",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "photoId": "8",
+                        "smallThumb": "",
+                        "largeThumb": "img/fotos-teste/foto-teste (8).jpeg",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "photoId": "9",
+                        "smallThumb": "",
+                        "largeThumb": "img/fotos-teste/foto-teste (9).jpeg",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "photoId": "10",
+                        "smallThumb": "",
+                        "largeThumb": "img/fotos-teste/foto-teste (10).jpeg",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    }
+                ]
+            },
+            {
+                "id": "personalizados",
+                "photoInfo": [
+                    {
+                        "photoId": "1",
+                        "smallThumb": "",
+                        "largeThumb": "img/fotos-teste/foto-teste (10).jpeg",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "photoId": "2",
+                        "smallThumb": "",
+                        "largeThumb": "img/fotos-teste/foto-teste (9).jpeg",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "photoId": "3",
+                        "smallThumb": "",
+                        "largeThumb": "img/fotos-teste/foto-teste (8).jpeg",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "photoId": "4",
+                        "smallThumb": "",
+                        "largeThumb": "img/fotos-teste/foto-teste (7).jpeg",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "photoId": "5",
+                        "smallThumb": "",
+                        "largeThumb": "img/fotos-teste/foto-teste (6).jpeg",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "photoId": "6",
+                        "smallThumb": "",
+                        "largeThumb": "img/fotos-teste/foto-teste (5).jpeg",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "photoId": "7",
+                        "smallThumb": "",
+                        "largeThumb": "img/fotos-teste/foto-teste (4).jpeg",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "photoId": "8",
+                        "smallThumb": "",
+                        "largeThumb": "img/fotos-teste/foto-teste (3).jpeg",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "photoId": "9",
+                        "smallThumb": "",
+                        "largeThumb": "img/fotos-teste/foto-teste (2).jpeg",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "photoId": "10",
+                        "smallThumb": "",
+                        "largeThumb": "img/fotos-teste/foto-teste (1).jpeg",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    }
+                ]
+            },
+            {
+                "id": "empresas",
+                "photoInfo": [
+                    {
+                        "photoId": "1",
+                        "smallThumb": "",
+                        "largeThumb": "img/fotos-teste/foto-teste (5).jpeg",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "photoId": "2",
+                        "smallThumb": "",
+                        "largeThumb": "img/fotos-teste/foto-teste (2).jpeg",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "photoId": "3",
+                        "smallThumb": "",
+                        "largeThumb": "img/fotos-teste/foto-teste (8).jpeg",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "photoId": "4",
+                        "smallThumb": "",
+                        "largeThumb": "img/fotos-teste/foto-teste (7).jpeg",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "photoId": "5",
+                        "smallThumb": "",
+                        "largeThumb": "img/fotos-teste/foto-teste (3).jpeg",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "photoId": "6",
+                        "smallThumb": "",
+                        "largeThumb": "img/fotos-teste/foto-teste (6).jpeg",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "photoId": "7",
+                        "smallThumb": "",
+                        "largeThumb": "img/fotos-teste/foto-teste (4).jpeg",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "photoId": "8",
+                        "smallThumb": "",
+                        "largeThumb": "img/fotos-teste/foto-teste (9).jpeg",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "photoId": "9",
+                        "smallThumb": "",
+                        "largeThumb": "img/fotos-teste/foto-teste (1).jpeg",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    },
+                    {
+                        "photoId": "10",
+                        "smallThumb": "",
+                        "largeThumb": "img/fotos-teste/foto-teste (10).jpeg",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    }
+                ]
+            }
+            
+        ]
+    }
+}

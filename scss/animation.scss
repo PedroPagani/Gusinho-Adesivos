@@ -21,9 +21,14 @@
 }
 
 
-[data-move="welcome-text"] {
-    transform: translateX(-200px);
+[data-isOpen="close"] {
+    transform: translateY(-100%);
 }
+
+[data-isOpen="open"] {
+    transform: translateY(0);
+}
+
 
 .animation {
     transform: translate3d(0,0,0);
