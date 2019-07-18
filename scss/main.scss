@@ -19,7 +19,7 @@ body {
 }
 
 .wrap {
-  width: 100%;
+  //width: 100%;
   height: 100%;
   overflow-x: hidden;
   
@@ -227,6 +227,7 @@ img {
 
 .video-container {
   margin-top: 30px;
+  width: 100%;
 }
 
 video {
@@ -385,73 +386,6 @@ video {
   }
 }
 
-
-/* 
-  JOBS SECTION
- */
-
- .jobs-container {
-   margin-top: 60px;
- }
-
-
- .jobs-list {
-   display: flex;
-   flex-wrap: wrap;
-   width: 100%;
- }
-
- .job {
-  width: 100%;
-  
- }
-
- .blue-opacity {
-   width: 100%;
-   height: 100%;
-   background: rgb(0,0,0);
-  background: linear-gradient(24deg, rgba(0,0,0,0.3) 0%, rgba(24,22,115,0.7) 57%);
- }
-
-
-
- .job:nth-child(1) {
-  background-image: url('../img/p-section/p2.png');
-  background-size: cover;
-  background-position: center;
- }
-
-
-
-
-.job-content {
-  padding: 40px;
-  text-align: center;
-  h1 {
-    padding-bottom: 20px;
-  }
-}
-
-.jobs-btn {
-  font-family: $font;
-  border: solid 2px white;
-  border-radius: 50px;
-  padding: 20px;
-  margin-top: 20px;
-  cursor: pointer;
-  a {
-    color: white;
-  }
-  a:visited {
-    color: white;
-  }
-}
-
-.jobs-btn:hover, 
-.welcome-btn:hover {
-  background-color: #42f4eb;
-
-}
 
 
 
